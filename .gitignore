@@ -41,11 +41,3 @@ vignettes/*.pdf
 # Rproj
 *.Rproj
 
-# Climate project
-info.txt
-config.yml
-
-# Data
-data/*
-
-
