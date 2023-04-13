@@ -35,8 +35,6 @@ Examples
 
 Here are some examples of how to use the pipesheet package:
 
-RCopy code
-
 ```
 # Load the pipesheet package
 library(pipesheet)
@@ -67,4 +65,4 @@ This package is free and open source software, licensed under GPL-3. Please see 
 Contact
 -------
 
-For any questions, issues, or feedback, please contact \[Roger Sanjaume\] at \[rsanjaume@gmail.com\].
+For any questions, issues, or feedback, please contact Roger Sanjaume at rsanjaume@gmail.com.
