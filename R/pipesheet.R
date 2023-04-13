@@ -39,7 +39,7 @@ edit <- function(data){
   if(.Platform$OS.type == "unix") {
     system(paste0('LD_LIBRARY_PATH= libreoffice ',f), wait = TRUE)
   } else {
-    shell(paste0('start excel ',f), wait = TRUE)
+    shell(paste0('start /wait excel ',f), wait = TRUE)
   }
   data <- dplyr::as_tibble(xlsx::read.xlsx(f,sheetIndex = 1))
   data
