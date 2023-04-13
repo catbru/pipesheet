@@ -9,9 +9,11 @@ Installation
 You can install the pipesheet package from GitHub using the `remotes` package:
 
 ```
-# Install remotes package if not already installed install.packages("remotes")
+# Install remotes package if not already installed
+install.packages("remotes")
 
-# Install the pipesheet package from GitHub remotes::install_github("catbru/pipesheet")
+# Install the pipesheet package from GitHub
+remotes::install_github("catbru/pipesheet")
 ```
 
 Usage
