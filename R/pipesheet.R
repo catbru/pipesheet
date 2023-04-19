@@ -12,7 +12,7 @@
 #' view(mtcars)
 view <- function(data, row.names = F){
   f <- file.path(paste0(tempfile(),'.xlsx'))
-  xlsx::write.xlsx(data,f, row.names = FALSE)
+  xlsx::write.xlsx(data %>% as.data.frame(),f, row.names = FALSE)
   if(.Platform$OS.type == "unix") {
     system(paste0('LD_LIBRARY_PATH= libreoffice ',f), wait = FALSE)
   } else {
@@ -35,7 +35,7 @@ view <- function(data, row.names = F){
 #' edited_data <- edit(mtcars)
 edit <- function(data){
   f <- file.path(paste0(tempfile(),'.xlsx'))
-  xlsx::write.xlsx(data,f, row.names = FALSE)
+  xlsx::write.xlsx(data %>% as.data.frame(),f, row.names = FALSE)
   if(.Platform$OS.type == "unix") {
     system(paste0('LD_LIBRARY_PATH= libreoffice ',f), wait = TRUE)
   } else {
